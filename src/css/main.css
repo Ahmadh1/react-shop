@@ -1,0 +1,174 @@
+/*-- Google Font --*/
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Spectral:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap");
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.navbar-brand > a > img {
+  width: 32px;
+}
+/* Images */
+.front-img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-border {
+  border: 1px solid #b8b7b7;
+}
+
+/* Typography */
+h1.title {
+  font-size: 50px;
+}
+.subtitle {
+  line-height: 35px;
+}
+.is-small-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.is-small {
+  font-size: 15px;
+}
+.ovrf-hidden {
+  overflow: hidden;
+}
+.text-left {
+  float: left;
+}
+.text-right {
+  float: right;
+}
+.is-discount {
+  color: #b8b7b7;
+  text-decoration: line-through;
+}
+.fade {
+  color: #929eaa;
+}
+.b-tm {
+  border-bottom: 1px solid #000;
+}
+.b-tm-gray {
+  border-top: 1px solid rgb(156, 134, 134);
+}
+/* Badge */
+.avatar-circle {
+  width: 32px;
+  height: 32px;
+  background-color: #ffe60d;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.initials {
+  position: relative;
+  top: 3px; /* 25% of parent */
+  font-size: 20px; /* 50% of parent */
+  line-height: 50px; /* 50% of parent */
+  color: #555;
+  font-weight: bold;
+}
+
+/* Buttons */
+.button.is-warning {
+  background-color: #ffe60d;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+.button.is-warning:hover {
+  background-color: #ffe60d;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+.button.is-danger {
+  background-color: #ff330d;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+.button.is-danger:hover {
+  background-color: #ff330d;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* Tabs */
+.tabs li.is-active a {
+  border-bottom-color: transparent;
+  color: #fff;
+  background: #555555 !important;
+}
+/* scrollToTop */
+.scrolltop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 45px;
+  height: 45px;
+  background: #ffe60d;
+  border-radius: 50%;
+  color: #555;
+  cursor: pointer;
+}
+
+/* Margins */
+.mt-custom {
+  margin-top: 100px;
+}
+.mt-custom-150 {
+  margin-top: 150px;
+}
+/* Box */
+.auth-box {
+  background: rgba(233, 225, 252, 0.6);
+}
+/* table */
+table,
+th,
+td {
+  border: 0 !important;
+}
+table {
+  border-collapse: collapse;
+}
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* logo */
+  .navbar-brand > a > img {
+    margin-top: 10px;
+    width: 175px;
+    height: 55px;
+  }
+  /* Typography */
+  h1.title {
+    font-size: 45px;
+  }
+  h2.subtitle {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+/* Footer */
+.footer-links > ul > li > a {
+  color: #555555;
+}
