@@ -1,7 +1,9 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 const Home = () => {
+  const qty = 1;
+  const dispatch = useDispatch();
   const { products } = useSelector((state) => state.ProductReducer);
   return (
     <section className="section">
@@ -27,9 +29,7 @@ const Home = () => {
                       <div className="media">
                         <div className="media-content">
                           <Link to={`/product/${product.id}`} className="title is-size-5">
-                            {product.title.length > 15
-                              ? product.title.substring(0, 15) + "..."
-                              : product.title}
+                            {product.title}
                           </Link>
                           <p className="subtitle is-6 mt-2">
                             <span className="has-text-danger is-size-6">
@@ -42,7 +42,7 @@ const Home = () => {
                       <div className="content">
                         <div className="field is-grouped">
                           <p className="control">
-                            <button className="button is-success">
+                            <button className="button is-success" onClick={() => dispatch({ type: 'ADD_TO_CART', payload: { product, qty }}) }>
                               Add to Cart &nbsp; <AiOutlineShoppingCart />
                             </button>
                           </p>

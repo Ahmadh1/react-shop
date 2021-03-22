@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import logo from "../images/goods.png";
 const Navbar = () => {
+  const { cartItems } = useSelector((state) => state.CartReducer);
   return (
     <nav className="navbar is-fixed-top has-shadow">
       <div className="container">
@@ -24,7 +26,7 @@ const Navbar = () => {
             </Link>
             <Link to="/cart" className="navbar-item has-text-danger">
               <HiOutlineShoppingBag  />
-              &nbsp;(0)
+              &nbsp;({ cartItems.length > 0 ? cartItems.length : 0 })
             </Link>
           </div>
         </div>

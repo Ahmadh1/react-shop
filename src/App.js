@@ -13,20 +13,20 @@ function App() {
       <Provider store={store}>
         <div className="App">
           <Navbar />
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route path="/cart">
-                <Cart />
-              </Route>
-              <Route path="/product/:id">
-                <ProductDetail />
-              </Route>
-              <Route path="*">
-                <NotFound />
-              </Route>
-            </Switch>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/product/:id">
+              <ProductDetail />
+            </Route>
+            <Route path="/cart">
+              <Cart />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
           <Footer />
         </div>
       </Provider>

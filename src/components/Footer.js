@@ -1,3 +1,4 @@
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
     return (
       <footer className="footer">
@@ -35,7 +36,7 @@ const Footer = () => {
                       href="https://www.facebook.com/JangoMangoOfficial/"
                       target="_blank"
                     >
-                      <i className="fa fa-facebook"></i> Facebook
+                      <FaFacebook /> Facebook
                     </a>
                   </li>
                   <li className="mt-2">
@@ -43,7 +44,7 @@ const Footer = () => {
                       href="https://www.instagram.com/jangomangoshop/"
                       target="_blank"
                     >
-                      <i className="fa fa-instagram"></i> Instagram
+                      <FaInstagram /> Instagram
                     </a>
                   </li>
                 </ul>
@@ -55,24 +56,8 @@ const Footer = () => {
                 <ul>
                   <li className="mt-2">
                     <a href="https://web.whatsapp.com/" target="_blank">
-                      <i className="fa fa-whatsapp"></i> +92 332 4833016
+                      <FaWhatsapp /> +92 304 7237840
                     </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div className="column">
-              <h3 className="subtitle is-size-6 has-text-weight-bold">PAYMENTS</h3>
-              <nav className="footer-links mt-3">
-                <ul>
-                  <li className="mt-2">
-                    <a href="#">Cash on Delivery</a>
-                  </li>
-                  <li className="mt-2">
-                    <a href="#">EasyPaisa</a>
-                  </li>
-                  <li className="mt-2">
-                    <a href="#">Jazzcash</a>
                   </li>
                 </ul>
               </nav>
@@ -83,7 +68,7 @@ const Footer = () => {
           <p>
             &copy; 2020 JangoMango. <span>All Rights &amp; Reserved.</span>
             <span>
-              Design &amp; Developed by
+              Design &amp; Developed by &nbsp;
               <a href="http://vertibumtech.com/" target="_blank">
                 Vertibumtech
               </a>
