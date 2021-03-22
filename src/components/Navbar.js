@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import logo from "../images/goods.png";
 const Navbar = () => {
+
   const { cartItems } = useSelector((state) => state.CartReducer);
   return (
     <nav className="navbar is-fixed-top has-shadow">
@@ -19,14 +20,16 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-menu" id="nav-links">
-          <div className="navbar-start"></div>
+          <div className="navbar-start">
+
+          </div>
           <div className="navbar-end">
             <Link to="/" className="navbar-item">
               Home
             </Link>
             <Link to="/cart" className="navbar-item has-text-danger">
-              <HiOutlineShoppingBag  />
-              &nbsp;({ cartItems.length > 0 ? cartItems.length : 0 })
+              <HiOutlineShoppingBag />
+              &nbsp;({cartItems.length > 0 ? cartItems.length : 0})
             </Link>
           </div>
         </div>
