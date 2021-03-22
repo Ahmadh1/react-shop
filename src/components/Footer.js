@@ -64,9 +64,9 @@ const Footer = () => {
             &copy; 2021. <span>All Rights &amp; Reserved.</span>
             <span>
               Design &amp; Developed by &nbsp;
-              <a href="http://vertibumtech.com/" target="_blank">
+              <Link to="http://vertibumtech.com/" target="_blank">
                 Vertibumtech
-              </a>
+              </Link>
             </span>
           </p>
         </div>
