@@ -7,7 +7,11 @@ import {
   FaCheck,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 const Cart = () => {
+  useEffect(() => {
+    window.scrollTo(0,0);
+  })
   const { cartItems, total, checkoutMsg } = useSelector(
     (state) => state.CartReducer
   );
@@ -118,10 +122,10 @@ const Cart = () => {
                             </tbody>
                           </table>
                         </div>
-                        <a href="#" className="button is-dark mt-5">
+                        <Link to="/" className="button is-dark mt-5">
                           <FaLongArrowAltLeft />
                           &nbsp;Continue Shopping
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -174,7 +178,6 @@ const Cart = () => {
                   <article class="message is-success mt-6">
                     <div class="message-header">
                       <p>Your Order is Placed</p>
-                      <button class="delete" aria-label="delete"></button>
                     </div>
                     <div class="message-body">
                       <p className="is-size-5">Thanks for shopping, hope to see you soon.</p>

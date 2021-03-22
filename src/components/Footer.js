@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
       <footer className="footer">
@@ -11,16 +12,16 @@ const Footer = () => {
               <nav className="footer-links mt-3">
                 <ul>
                   <li className="mt-1">
-                    <a href="contact.html">Contact</a>
+                    <Link to="contact.html">Contact</Link>
                   </li>
                   <li className="mt-1">
-                    <a href="tracking.html">Orders tracking</a>
+                    <Link to="tracking.html">Orders tracking</Link>
                   </li>
                   <li className="mt-1">
-                    <a href="faq.html">FAQs</a>
+                    <Link to="faq.html">FAQs</Link>
                   </li>
                   <li className="mt-1">
-                    <a href="terms.html">Terms &amp; Conditions</a>
+                    <Link to="terms.html">Terms &amp; Conditions</Link>
                   </li>
                 </ul>
               </nav>
@@ -32,30 +33,24 @@ const Footer = () => {
               <nav className="footer-links mt-3">
                 <ul>
                   <li className="mt-2">
-                    <a
-                      href="https://www.facebook.com/JangoMangoOfficial/"
-                      target="_blank"
-                    >
-                      <FaFacebook /> Facebook
-                    </a>
-                  </li>
-                  <li className="mt-2">
-                    <a
-                      href="https://www.instagram.com/jangomangoshop/"
+                    <Link
+                      to="https://www.instagram.com/ahmadh_1/"
                       target="_blank"
                     >
                       <FaInstagram /> Instagram
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
             </div>
             <div className="column">
-              <h3 className="subtitle is-size-6 has-text-weight-bold">WHATSAPP</h3>
+              <h3 className="subtitle is-size-6 has-text-weight-bold">
+                WHATSAPP
+              </h3>
               <nav className="footer-links mt-3">
                 <ul>
                   <li className="mt-2">
-                    <a href="https://web.whatsapp.com/" target="_blank">
+                    <a>
                       <FaWhatsapp /> +92 304 7237840
                     </a>
                   </li>
@@ -66,7 +61,7 @@ const Footer = () => {
         </div>
         <div className="content has-text-centered mt-6">
           <p>
-            &copy; 2020 JangoMango. <span>All Rights &amp; Reserved.</span>
+            &copy; 2021. <span>All Rights &amp; Reserved.</span>
             <span>
               Design &amp; Developed by &nbsp;
               <a href="http://vertibumtech.com/" target="_blank">

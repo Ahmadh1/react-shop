@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import notFound from "../images/404.png";
 const NotFound = () => {
+  useEffect(() => {
+    window.scrollTo(0,0);
+  })
   return (
     <section className="section mt-custom-150">
       <div className="container">
@@ -26,7 +30,7 @@ const NotFound = () => {
                       Need Help?
                       <br />
                     </p>
-                    <b>help@vertibumtech.com</b>
+                    <b>ahmadh807@gmail.com</b>
                   </div>
                 </div>
               </div>
