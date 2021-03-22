@@ -9,9 +9,6 @@ import {
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 const Cart = () => {
-  useEffect(() => {
-    window.scrollTo(0,0);
-  })
   const { cartItems, total, checkoutMsg } = useSelector(
     (state) => state.CartReducer
   );
