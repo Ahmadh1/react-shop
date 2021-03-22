@@ -7,7 +7,6 @@ import {
   FaCheck,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 const Cart = () => {
   const { cartItems, total, checkoutMsg } = useSelector(
     (state) => state.CartReducer
@@ -25,7 +24,7 @@ const Cart = () => {
                 </Link>
               </li>
               <li className="is-active">
-                <a>Cart</a>
+                <Link to="/cart">Cart</Link>
               </li>
             </ul>
           </nav>

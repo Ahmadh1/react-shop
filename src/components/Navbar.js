@@ -18,7 +18,7 @@ const Navbar = () => {
             <img src={logo} alt="Mobile Store" className="logo" />
           </Link>
 
-          <a
+          <button
             onClick={() => {
               setisActive(!isActive);
             }}
@@ -31,7 +31,7 @@ const Navbar = () => {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </button>
         </div>
         <div
           id="navbarBasicExample"

@@ -28,7 +28,7 @@ const ProductDetail = () => {
                 </Link>
               </li>
               <li className="is-active">
-                <a>{product.title}</a>
+                <Link to={`/product/${id}`}>{product.title}</Link>
               </li>
             </ul>
           </nav>
